@@ -9,89 +9,42 @@
 
 <body>
     <header>
-        <div class="nav container">
-            <a href="#" class="logo">SubUrban Store</a>
-            <p class="sessao">Todos Acessórios Calçados Camisetas</p>
-        </div>
-        <div class="carrinho">
-            <h2 class="carrinho-title">Meu Carrinho</h2>
-            <div class="carrinho-content">
-                <div class="carrinho-box">
-                    <img src="img/product2.jpg" alt="" class="carrinho-img">
-                    <div class="detalhe-box">
-                        <div class="carrinho-produc-title">Wireless Sports</div>
-                        <div class="carrinho-price">R$ 290,00</div>
-                        <input type="number" value="1" class="carrinho-quantity">
-                    </div>
-                    <button class="Carrinho-remove">Remover</button>
-                </div>
-                <div class="total">
-                    <div class="total-title">Total: </div>
-                    <div class="total-price"> R$ 0,00</div>
-                </div>
-                <button type="button" class="btn-buy">Comprar</button>
-            </div>
+        <div class="nav-container">
+            <h1 class="logo">SubUrban Store</h1>
+            <ul>
+                <li><a>Todos</a></li>
+                <li><a>Acessórios</a></li>
+                <li><a>Calçados</a></li>
+                <li><a>Camisetas</a></li>
+            </ul>
         </div>
     </header>
+    <h2 class="section-title">Lançamentos SubUrban</h2>
     <section class="shop container">
-        <div class="pesquisar">
-            <p class="p1">Digite aqui sua pesquisa
-            </p>
-            <button type="button" class="btn-pesquisar">Pesquisar</button>
+        <div class="shop-content" id="vitrine">
         </div>
-        <h2 class="section-title">Lançamentos SubUrban</h2>
-        <div class="shop-content">
-            <div class="product-box">
-                <img src="img/product1.jpg" alt="" class="product-img">
-                <h2 class="product-title">Camisa Adidas Militar Logo</h2>
-                <span class="price">R$ 90,00</span>
-                <button type="button" class="btn-buy">Comprar</button>
+        <div>
+            <div class="pesquisar">
+                <input type="text" placeholder="Pesquise um produto">
+                <button type="button" class="btn-pesquisar">Pesquisar</button>
             </div>
-            <div class="product-box">
-                <img src="img/product2.jpg" alt="" class="product-img">
-                <h2 class="product-title">Wireless Sports</h2>
-                <span class="price">R$ 290,00</span>
-                <button type="button" class="btn-buy">Comprar</button>
-            </div>
-            <div class="product-box">
-                <img src="img/product3.jpg" alt="" class="product-img">
-                <h2 class="product-title">Casaco Urban 2</h2>
-                <span class="price">R$ 799,99</span>
-                <button type="button" class="btn-buy">Comprar</button>
-            </div>
-            <div class="product-box">
-                <img src="img/product4.jpg" alt="" class="product-img">
-                <h2 class="product-title">Garrafa Sports logo</h2>
-                <span class="price">R$ 69,90</span>
-                <button type="button" class="btn-buy">Comprar</button>
-            </div>
-            <div class="product-box">
-                <img src="img/product5.jpg" alt="" class="product-img">
-                <h2 class="product-title">Óculos Glass Sports Azul</h2>
-                <span class="price">R$ 599,90</span>
-                <button type="button" class="btn-buy">Comprar</button>
-            </div>
-            <div class="product-box">
-                <img src="img/product6.jpg" alt="" class="product-img">
-                <h2 class="product-title">Boné Urban Everyday</h2>
-                <span class="price">R$ 59,99</span>
-                <button type="button" class="btn-buy">Comprar</button>
-            </div>
-            <div class="product-box">
-                <img src="img/product7.jpg" alt="" class="product-img">
-                <h2 class="product-title">Bolsa Fast Sports</h2>
-                <span class="price">R$ 470,00</span>
-                <button type="button" class="btn-buy">Comprar</button>
-            </div>
-            <div class="product-box">
-                <img src="img/product8.jpg" alt="" class="product-img">
-                <h2 class="product-title">Tênis Max Perform</h2>
-                <span class="price">R$ 1200,00</span>
-                <button type="button" class="btn-buy">Comprar</button>
+            <div class="carrinho">
+                <h2 class="carrinho-title">Meu Carrinho</h2>
+                <div class="carrinho-content" id="add">
+                    <div class="total">
+                        <div>Quantidade: </div>
+                        <div class="quanty"> </div>
+                        <div class="total-title">Valor Total: </div>
+                        <div class="total-price"> </div>
+                    </div>
+                    <button type="button" class="btn-buy">Comprar</button>
+                </div>
             </div>
         </div>
     </section>
-    <script src="index.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>
